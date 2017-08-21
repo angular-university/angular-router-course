@@ -1,0 +1,26 @@
+
+.l-header {
+    height: 58px;
+}
+
+.top-menu {
+    margin-left: 50px;
+}
+
+.top-menu li {
+    box-shadow: none !important;
+}
+
+.l-sample-app {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.youtube-logo {
+    max-width: 400px;
+}
+
+.lessons-list td {
+    padding: 5px;
+}
