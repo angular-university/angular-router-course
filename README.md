@@ -5,9 +5,9 @@
 
 This repository contains the code of the [Angular Router Course](https://angular-university.io/angular-router-course).
 
-This course repository is updated to Angular 4, there is a npm-lock.json file available.
+This course repository is updated to Angular 4, there is a npm-lock.json file available for avoiding semantic versioning issues.
 
-![Angular Router Course](https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png)
+![Angular Router Course](https://angular-academy.s3.amazonaws.com/thumbnails/angular2-routing-small-v2.png)
 
 
 # Installation pre-requisites
