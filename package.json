@@ -3,7 +3,7 @@
   "description": "Angular Router-Course",
   "version": "1.0.0",
   "scripts": {
-    "start": "./node_modules/.bin/http-server -c-1 ."
+    "start": "node ./server.js"
   },
   "devDependencies": {
     "http-server": "^0.9.0"
