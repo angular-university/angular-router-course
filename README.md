@@ -3,11 +3,11 @@
 
 # Angular Router Course
 
-This repository contains the code of the [Angular Router Course](https://angular-university.io/course/angular2-forms).
+This repository contains the code of the [Angular Router Course](https://angular-university.io/course/angular2-routing).
 
 This course repository is updated to Angular 4, there is a npm-lock.json file available for avoiding semantic versioning issues.
 
-![Angular Router Course](https://angular-academy.s3.amazonaws.com/thumbnails/angular-forms-small-v2.png)
+![Angular Router Course](https://angular-academy.s3.amazonaws.com/thumbnails/angular2-routing-small-v2.png)
 
 
 # Installation pre-requisites
