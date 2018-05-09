@@ -5,7 +5,7 @@
 
 This repository contains the code of the [Angular Router Course](https://angular-university.io/course/angular2-routing).
 
-This course repository is updated to Angular v5, there is a npm-lock.json file available for avoiding semantic versioning issues.
+All the video content of this course is valid for the latest Angular v6 release, there is a npm-lock.json file available for avoiding semantic versioning issues.
 
 ![Angular Router Course](https://angular-academy.s3.amazonaws.com/thumbnails/angular2-routing-small-v2.png)
 
