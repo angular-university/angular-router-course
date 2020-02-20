@@ -22,7 +22,7 @@
     "zone.js": "^0.8.14",
     "body-parser": "1.15.1",
     "express": "4.13.4",
-    "lodash": "4.13.1",
+    "lodash": "4.17.13",
     "systemjs": "0.19.27",
     "ts-node": "3.0.2",
     "typescript": "2.2.0"
