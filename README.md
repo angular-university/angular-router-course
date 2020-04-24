@@ -7,9 +7,9 @@ under the new name Angular Route In Depth.
 
 While the new version is still being filmed,  this repository will contain two versions of the course: 
 
-- The master branch contains the old version of the course 
+- The master branch (that you are currently on) contains the old version of the course 
 
-- the 1-start branch contains the starting point of the new course
+- the [1-start](https://github.com/angular-university/angular-router-course/tree/1-start) branch contains the starting point of the new course
 
 # Angular Router Course (The old version)
 
