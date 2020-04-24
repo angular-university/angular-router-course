@@ -1,6 +1,19 @@
 export const COURSES: any = {
 
 
+  18: {
+    id: 18,
+    description: 'Angular Router In Depth',
+    longDescription: 'Build large-scale Single Page Applications with the powerful Angular Router',
+    iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/angular2-routing-small-v2.png',
+    courseListIcon: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png',
+    category: 'BEGINNER',
+    lessonsCount: 10,
+    seqNo: 0,
+    url: 'angular-router-course',
+    price: 50
+  },
+
   17: {
     id: 17,
     description: 'Reactive Angular Course',
@@ -9,7 +22,7 @@ export const COURSES: any = {
     courseListIcon: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png',
     category: 'BEGINNER',
     lessonsCount: 10,
-    seqNo: 0,
+    seqNo: 1,
     url: 'reactive-angular-course',
     price: 50
 
@@ -34,7 +47,7 @@ export const COURSES: any = {
     iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/ngrx-v2.png',
     category: 'BEGINNER',
     lessonsCount: 10,
-    seqNo: 1,
+    seqNo: 3,
     url: 'ngrx-course',
     promo: false,
     price: 50
@@ -48,7 +61,7 @@ export const COURSES: any = {
     iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-core-in-depth-small.png',
     lessonsCount: 10,
     category: 'BEGINNER',
-    seqNo: 3,
+    seqNo: 4,
     url: 'angular-core-course',
     price: 50
   },
@@ -63,7 +76,7 @@ export const COURSES: any = {
     courseListIcon: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png',
     category: 'BEGINNER',
     lessonsCount: 10,
-    seqNo: 4,
+    seqNo: 5,
     url: 'angular-for-beginners',
     price: 50
   },
@@ -74,7 +87,7 @@ export const COURSES: any = {
     longDescription: 'In-depth guide to Unit Testing and E2E Testing of Angular Applications',
     iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-testing-small.png',
     category: 'BEGINNER',
-    seqNo: 5,
+    seqNo: 6,
     url: 'angular-testing-course',
     lessonsCount: 10,
     promo: false,
@@ -89,7 +102,7 @@ export const COURSES: any = {
     iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/serverless-angular-small.png',
     lessonsCount: 10,
     category: 'BEGINNER',
-    seqNo: 6,
+    seqNo: 7,
     url: 'serverless-angular',
     price: 50
   },
@@ -101,7 +114,7 @@ export const COURSES: any = {
     iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/stripe-course.jpg',
     lessonsCount: 10,
     category: 'BEGINNER',
-    seqNo: 7,
+    seqNo: 8,
     url: 'stripe-course',
     price: 50
   },
@@ -114,7 +127,7 @@ export const COURSES: any = {
     iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/nestjs-v2.png',
     category: 'BEGINNER',
     lessonsCount: 10,
-    seqNo: 8,
+    seqNo: 9,
     url: 'nestjs-course',
     promo: false,
     price: 50
@@ -129,7 +142,7 @@ export const COURSES: any = {
     courseListIcon: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/lock-v2.png',
     category: 'ADVANCED',
     lessonsCount: 11,
-    seqNo: 9,
+    seqNo: 10,
     url: 'angular-security-course',
     price: 50
   },
@@ -142,7 +155,7 @@ export const COURSES: any = {
     courseListIcon: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/alien.png',
     category: 'ADVANCED',
     lessonsCount: 8,
-    seqNo: 10,
+    seqNo: 11,
     url: 'angular-pwa-course',
     price: 50
   },
@@ -154,7 +167,7 @@ export const COURSES: any = {
     iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png',
     courseListIcon: 'https://angular-academy.s3.amazonaws.com/thumbnails/angular-advanced-lesson-icon.png',
     category: 'ADVANCED',
-    seqNo: 11,
+    seqNo: 12,
     url: 'angular-advanced-course',
     price: 50
   },
@@ -166,7 +179,7 @@ export const COURSES: any = {
     iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png',
     courseListIcon: 'https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-lesson.png',
     category: 'BEGINNER',
-    seqNo: 12,
+    seqNo: 13,
     url: 'typescript-course',
     price: 50
   },
