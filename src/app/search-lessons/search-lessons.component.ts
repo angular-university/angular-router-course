@@ -21,8 +21,7 @@ import {CoursesService} from '../services/courses.service';
 @Component({
   selector: 'course',
   templateUrl: './search-lessons.component.html',
-  styleUrls: ['./search-lessons.component.css'],
-    changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./search-lessons.component.css']
 })
 export class SearchLessonsComponent implements OnInit {
 

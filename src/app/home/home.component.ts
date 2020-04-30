@@ -1,9 +1,9 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Course, sortCoursesBySeqNo} from '../model/course';
 import {Observable} from 'rxjs';
-import {CoursesStore} from '../services/courses.store';
 import {CoursesService} from "../services/courses.service";
 import {map} from "rxjs/operators";
+import {LoadingService} from "../loading/loading.service";
 
 
 @Component({
@@ -17,7 +17,9 @@ export class HomeComponent implements OnInit {
 
   advancedCourses$: Observable<Course[]>;
 
-  constructor(private courses: CoursesService) {
+  constructor(
+    private courses: CoursesService,
+    private loading: LoadingService) {
 
   }
 
@@ -38,7 +40,7 @@ export class HomeComponent implements OnInit {
   }
 
   filterByCategory(courses$: Observable<Course[]>, category:string) {
-    return courses$
+    return this.loading.showLoaderUntilCompleted(courses$)
       .pipe(
         map(courses => courses.filter(course => course.category == category).sort(sortCoursesBySeqNo))
       );
