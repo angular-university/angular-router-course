@@ -20,10 +20,10 @@ import {delayWhen, filter, map, take, timeout} from 'rxjs/operators';
 
 @Component({
     selector: 'about',
-    templateUrl: './about.component.html',
-    styleUrls: ['./about.component.css']
+    templateUrl: './page-not-found.component.html',
+    styleUrls: ['./page-not-found.component.css']
 })
-export class AboutComponent implements OnInit {
+export class PageNotFoundComponent implements OnInit {
 
     ngOnInit() {
 

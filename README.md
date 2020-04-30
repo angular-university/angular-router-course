@@ -1,5 +1,5 @@
 
-## The Reactive Angular Course
+## The Angular Router In Depth Course
 
 This repository contains the code of the course [Angular Router In Depth](https://angular-university.io/course/angular-router-course).
 

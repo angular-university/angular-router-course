@@ -9,7 +9,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {HomeComponent} from './home/home.component';
-import {AboutComponent} from './about/about.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {CourseComponent} from './course/course.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -36,12 +35,13 @@ import { LoadingComponent } from './loading/loading.component';
 import { CoursesCardListComponent } from './courses-card-list/courses-card-list.component';
 import {LoadingService} from './loading/loading.service';
 import {MessagesService} from './messages/messages.service';
+import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
+    PageNotFoundComponent,
     CourseComponent,
     CourseDialogComponent,
     LoginComponent,
