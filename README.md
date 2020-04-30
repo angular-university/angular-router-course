@@ -5,7 +5,7 @@ This repository contains the code of the course [Angular Router In Depth](https:
 
 This course repository is updated to Angular v9, and there is a  package-lock.json file available, for avoiding semantic versioning installation issues.
 
-![Angular Router In Depth](TODO)
+![Angular Router In Depth](https://angular-university.s3-us-west-1.amazonaws.com/course-images/angular-router-course.jpg)
 
 
 # Installation pre-requisites
