@@ -1,14 +1,15 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {Course} from '../model/course';
+import {Course, sortCoursesBySeqNo} from '../model/course';
 import {Observable} from 'rxjs';
 import {CoursesStore} from '../services/courses.store';
+import {CoursesService} from "../services/courses.service";
+import {map} from "rxjs/operators";
 
 
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 
@@ -16,19 +17,31 @@ export class HomeComponent implements OnInit {
 
   advancedCourses$: Observable<Course[]>;
 
-  constructor(private coursesStore: CoursesStore) {
+  constructor(private courses: CoursesService) {
 
   }
 
   ngOnInit() {
+
       this.reloadCourses();
+
   }
 
   reloadCourses() {
 
-      this.beginnerCourses$ = this.coursesStore.filterByCategory("BEGINNER");
+    const courses$ = this.courses.loadAllCourses();
 
-      this.advancedCourses$ = this.coursesStore.filterByCategory("ADVANCED");
+      this.beginnerCourses$ = this.filterByCategory(courses$, "BEGINNER");
+
+      this.advancedCourses$ = this.filterByCategory(courses$, "ADVANCED");
+
+  }
+
+  filterByCategory(courses$: Observable<Course[]>, category:string) {
+    return courses$
+      .pipe(
+        map(courses => courses.filter(course => course.category == category).sort(sortCoursesBySeqNo))
+      );
   }
 
 }
