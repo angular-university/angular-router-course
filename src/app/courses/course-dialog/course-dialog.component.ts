@@ -3,9 +3,9 @@ import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
 import {Course} from "../model/course";
 import {FormBuilder, Validators, FormGroup} from "@angular/forms";
 import * as moment from 'moment';
-import {LoadingService} from '../loading/loading.service';
-import {MessagesService} from '../messages/messages.service';
 import {CoursesService} from "../services/courses.service";
+import {LoadingService} from "../../shared/loading/loading.service";
+import {MessagesService} from "../../shared/messages/messages.service";
 
 
 @Component({

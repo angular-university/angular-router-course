@@ -3,7 +3,7 @@ import {Course, sortCoursesBySeqNo} from '../model/course';
 import {Observable} from 'rxjs';
 import {CoursesService} from "../services/courses.service";
 import {map} from "rxjs/operators";
-import {LoadingService} from "../loading/loading.service";
+import {LoadingService} from "../../shared/loading/loading.service";
 
 
 @Component({
