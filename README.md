@@ -2,8 +2,8 @@
 
 # IMPORTANT
 
-The Angular Router course is currently being completely re-filmed from scratch and will be out very soon,
-under the new name Angular Route In Depth:
+The Angular Router Course is currently being completely re-filmed from scratch and will be out very soon,
+under the new name Angular Router In Depth:
 
 ![Angular Router Course](https://angular-university.s3-us-west-1.amazonaws.com/course-images/angular-router-course.jpg)
 
