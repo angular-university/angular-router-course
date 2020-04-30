@@ -30,7 +30,6 @@ import {LoginComponent} from './login/login.component';
 import {LessonComponent} from './lesson/lesson.component';
 import {SafeUrlPipe} from './common/safe-url.pipe';
 import {MessagesComponent} from './messages/messages.component';
-import {SearchLessonsComponent} from './search-lessons/search-lessons.component';
 import { LoadingComponent } from './loading/loading.component';
 import { CoursesCardListComponent } from './courses-card-list/courses-card-list.component';
 import {LoadingService} from './loading/loading.service';
@@ -48,7 +47,6 @@ import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
     LessonComponent,
     SafeUrlPipe,
     MessagesComponent,
-    SearchLessonsComponent,
     LoadingComponent,
     CoursesCardListComponent
 

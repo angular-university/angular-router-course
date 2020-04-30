@@ -3,7 +3,6 @@ import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {CourseComponent} from './course/course.component';
 import {LoginComponent} from './login/login.component';
-import {SearchLessonsComponent} from './search-lessons/search-lessons.component';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 
 const routes: Routes = [
@@ -19,10 +18,6 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
-  },
-  {
-    path:"search-lessons",
-    component: SearchLessonsComponent
   },
   {
     path: 'courses/:courseId',
