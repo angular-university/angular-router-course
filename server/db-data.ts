@@ -5,7 +5,7 @@ export const COURSES: any = {
     id: 18,
     description: 'Angular Router In Depth',
     longDescription: 'Build large-scale Single Page Applications with the powerful Angular Router',
-    iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/angular2-routing-small-v2.png',
+    iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/angular-router-course.jpg',
     courseListIcon: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png',
     category: 'BEGINNER',
     lessonsCount: 10,
