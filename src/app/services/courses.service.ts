@@ -22,7 +22,7 @@ export class CoursesService {
             );
     }
 
-    loadAllCourseLessons(courseId:number): Observable<Lesson[]> {
+    loadAllCourseLessonsSummary(courseId:number): Observable<Lesson[]> {
         return this.http.get<Lesson[]>('/api/lessons', {
             params: {
                 pageSize: "10000",

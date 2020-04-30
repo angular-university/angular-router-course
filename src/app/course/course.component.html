@@ -6,7 +6,7 @@
 
         <img class="course-thumbnail" [src]="data.course?.iconUrl" *ngIf="data.course">
 
-        <lessons-list [lessons]="data.lessons"></lessons-list>
+        <router-outlet></router-outlet>
 
     </div>
 

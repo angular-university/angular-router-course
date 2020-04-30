@@ -46,7 +46,7 @@ export class CourseComponent implements OnInit {
 
         const course$ = this.coursesService.loadCourseById(courseId);
 
-        const lessons$ = this.coursesService.loadAllCourseLessons(courseId);
+        const lessons$ = this.coursesService.loadAllCourseLessonsSummary(courseId);
 
         this.data$ = combineLatest([course$, lessons$])
             .pipe(
