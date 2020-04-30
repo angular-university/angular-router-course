@@ -3,7 +3,9 @@
 # IMPORTANT
 
 The Angular Router course is currently being completely re-filmed from scratch and will be out very soon,
-under the new name Angular Route In Depth.
+under the new name Angular Route In Depth:
+
+![Angular Router Course](https://angular-academy.s3.amazonaws.com/thumbnails/angular2-routing-small-v2.png)
 
 While the new version is still being filmed,  this repository will contain two versions of the course: 
 
