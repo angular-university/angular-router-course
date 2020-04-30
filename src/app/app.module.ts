@@ -35,6 +35,7 @@ import { CoursesCardListComponent } from './courses-card-list/courses-card-list.
 import {LoadingService} from './loading/loading.service';
 import {MessagesService} from './messages/messages.service';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
+import { LessonsListComponent } from './lessons-list/lessons-list.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
     SafeUrlPipe,
     MessagesComponent,
     LoadingComponent,
-    CoursesCardListComponent
+    CoursesCardListComponent,
+    LessonsListComponent
 
   ],
   imports: [
