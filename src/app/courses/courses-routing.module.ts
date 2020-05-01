@@ -4,6 +4,7 @@ import {CourseComponent} from "./course/course.component";
 import {LessonsListComponent} from "./lessons-list/lessons-list.component";
 import {HomeComponent} from "./home/home.component";
 import {CourseResolver} from "./services/router/course.resolver";
+import {LessonsResolver} from "./services/router/lessons.resolver";
 
 
 const routes: Routes = [
@@ -20,7 +21,10 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        component: LessonsListComponent
+        component: LessonsListComponent,
+        resolve: {
+          lessons: LessonsResolver
+        }
       }
     ]
   },
@@ -30,7 +34,8 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
   providers: [
-    CourseResolver
+    CourseResolver,
+    LessonsResolver
   ]
 })
 export class CoursesRoutingModule {
