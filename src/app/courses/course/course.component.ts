@@ -18,12 +18,6 @@ import {Lesson} from '../model/lesson';
 import {CoursesService} from '../services/courses.service';
 
 
-interface CourseData {
-    course: Course;
-    lessons: Lesson[];
-}
-
-
 @Component({
   selector: 'course',
   templateUrl: './course.component.html',
@@ -31,35 +25,17 @@ interface CourseData {
 })
 export class CourseComponent implements OnInit {
 
-  data$: Observable<CourseData>;
+  course: Course;
 
 
-  constructor(private route: ActivatedRoute,
-              private coursesService: CoursesService) {
+  constructor(private route: ActivatedRoute) {
 
 
   }
 
   ngOnInit() {
 
-        const courseId = parseInt(this.route.snapshot.paramMap.get("courseId"));
-
-        const course$ = this.coursesService.loadCourseById(courseId);
-
-        const lessons$ = this.coursesService.loadAllCourseLessonsSummary(courseId);
-
-        this.data$ = combineLatest([course$, lessons$])
-            .pipe(
-                startWith([null, []]),
-                map(([course, lessons]) => {
-                    return {
-                        course,
-                        lessons
-                    }
-                }),
-                tap(console.log)
-            );
-
+      this.course = this.route.snapshot.data["course"];
 
   }
 
