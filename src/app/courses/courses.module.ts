@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CoursesRoutingModule } from './courses-routing.module';
 import {LessonsListComponent} from "./lessons-list/lessons-list.component";
 import {CoursesCardListComponent} from "./courses-card-list/courses-card-list.component";
-import {LessonComponent} from "./lesson/lesson.component";
+import {LessonDetailComponent} from "./lesson/lesson-detail.component";
 import {CourseDialogComponent} from "./course-dialog/course-dialog.component";
 import {CourseComponent} from "./course/course.component";
 import {HomeComponent} from "./home/home.component";
@@ -31,7 +31,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     HomeComponent,
     CourseComponent,
     CourseDialogComponent,
-    LessonComponent,
+    LessonDetailComponent,
     CoursesCardListComponent,
     LessonsListComponent,
 

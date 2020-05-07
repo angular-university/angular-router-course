@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Lesson} from "../model/lesson";
 import {ActivatedRoute} from "@angular/router";
+import {LessonSummary} from "../model/lesson-summary";
 
 @Component({
   selector: 'lessons-list',
@@ -9,7 +9,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class LessonsListComponent implements OnInit {
 
-  lessons:Lesson[];
+  lessons:LessonSummary[];
 
   constructor(private route:ActivatedRoute) {
 

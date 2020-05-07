@@ -14,7 +14,6 @@ import {
   concatAll, shareReplay, catchError
 } from 'rxjs/operators';
 import {merge, fromEvent, Observable, concat, throwError, combineLatest} from 'rxjs';
-import {Lesson} from '../model/lesson';
 import {CoursesService} from '../services/courses.service';
 
 

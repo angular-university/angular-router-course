@@ -3,7 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {Observable,of} from 'rxjs';
 import {map, shareReplay} from 'rxjs/operators';
 import {Course} from "../model/course";
-import {Lesson} from "../model/lesson";
+import {LessonDetail} from "../model/lesson-detail";
+import {LessonSummary} from "../model/lesson-summary";
 
 
 @Injectable()
@@ -20,8 +21,8 @@ export class CoursesService {
             );
     }
 
-    loadAllCourseLessonsSummary(courseUrl:string): Observable<Lesson[]> {
-        return this.http.get<Lesson[]>('/api/lessons', {
+    loadAllCourseLessonsSummary(courseUrl:string): Observable<LessonSummary[]> {
+        return this.http.get<LessonSummary[]>('/api/lessons', {
             params: {
                 pageSize: "10000",
                 courseUrl
@@ -50,8 +51,8 @@ export class CoursesService {
     }
 
 
-    searchLessons(search:string): Observable<Lesson[]> {
-        return this.http.get<Lesson[]>('/api/lessons', {
+    searchLessons(search:string): Observable<LessonSummary[]> {
+        return this.http.get<LessonSummary[]>('/api/lessons', {
             params: {
                 filter: search,
                 pageSize: "100"
@@ -64,8 +65,8 @@ export class CoursesService {
     }
 
 
-  loadLessonDetail(courseUrl: string, lessonSeqNo: string):Observable<Lesson> {
-    return this.http.get<Lesson>(`/api/lesson-details`, {
+  loadLessonDetail(courseUrl: string, lessonSeqNo: string):Observable<LessonDetail> {
+    return this.http.get<LessonDetail>(`/api/lesson-details`, {
       params: {
         courseUrl,
         lessonSeqNo
