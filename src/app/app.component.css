@@ -15,7 +15,6 @@ main {
 
 .toolbar-tools {
   display: flex;
-  width: 100%;
 }
 
 
@@ -27,4 +26,8 @@ main {
 .menu-item {
   text-transform: uppercase;
   cursor:pointer;
+}
+
+.menu-item.menu-item-active {
+  text-decoration: underline;
 }

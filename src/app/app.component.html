@@ -4,25 +4,26 @@
 
     <div class="toolbar-tools">
 
-      <a class="menu-item" mat-button routerLink="/">
+      <a class="menu-item" mat-button routerLink="/courses" routerLinkActive="menu-item-active">
         <span>Courses</span>
       </a>
 
-      <a class="menu-item" mat-button routerLink="/about">
+      <a class="menu-item" mat-button routerLink="/about" routerLinkActive="menu-item-active">
         <span>About</span>
       </a>
 
-      <a mat-button class="menu-item" routerLink="/login" *ngIf="auth.isLoggedOut$ | async">
+      <a mat-button class="menu-item" routerLink="/login" *ngIf="auth.isLoggedOut$ | async" routerLinkActive="menu-item-active">
         <mat-icon>account_circle</mat-icon>
         <span>Login</span>
       </a>
 
-      <a mat-button class="menu-item" (click)="logout()" *ngIf="auth.isLoggedIn$ | async">
-        <mat-icon>exit_to_app</mat-icon>
-        <span>Logout</span>
-      </a>
-
     </div>
+
+    <a mat-button class="menu-item" (click)="logout()" *ngIf="auth.isLoggedIn$ | async">
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Logout</span>
+    </a>
+
 
     <div class="filler"></div>
 
