@@ -40,7 +40,12 @@ export function searchLessons(req: Request, res: Response) {
 
     const initialPos = pageNumber * pageSize;
 
-    const lessonsPage = lessons.slice(initialPos, initialPos + pageSize);
+    const lessonsPage = lessons.slice(initialPos, initialPos + pageSize)
+      .map(lesson => {
+      const newLesson = {...lesson};
+      delete newLesson.videoId;
+      return newLesson;
+    });
 
     setTimeout(() => {
         res.status(200).json({payload: lessonsPage});

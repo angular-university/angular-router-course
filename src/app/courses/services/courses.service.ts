@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {Observable,of} from 'rxjs';
 import {map, shareReplay} from 'rxjs/operators';
 import {Course} from "../model/course";
 import {Lesson} from "../model/lesson";
@@ -64,6 +64,17 @@ export class CoursesService {
     }
 
 
+  loadLessonDetail(courseUrl: string, lessonSeqNo: string):Observable<Lesson> {
+    return this.http.get<Lesson>(`/api/lesson-details`, {
+      params: {
+        courseUrl,
+        lessonSeqNo
+      }
+    })
+      .pipe(
+        shareReplay()
+      );
+  }
 }
 
 

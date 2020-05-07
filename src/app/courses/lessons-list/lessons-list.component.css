@@ -10,6 +10,10 @@
   height: 60px;
 }
 
+.lessons-table tr:hover {
+  cursor: pointer;
+}
+
 .lessons-table td {
   border-top: 1px solid  rgba(0,0,0,.12);
 }

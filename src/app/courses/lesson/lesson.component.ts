@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Lesson} from '../model/lesson';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'lesson',
@@ -8,12 +9,17 @@ import {Lesson} from '../model/lesson';
 })
 export class LessonComponent implements OnInit {
 
-  @Input()
-  lesson:Lesson;
+  lesson: Lesson;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {
+
+    console.log("Created LessonComponent...");
+
+  }
 
   ngOnInit() {
+
+    this.lesson = this.route.snapshot.data["lesson"];
 
   }
 
