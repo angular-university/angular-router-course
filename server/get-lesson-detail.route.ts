@@ -21,6 +21,6 @@ export function findLessonDetail(req: Request, res: Response) {
   lesson['first'] = (lessonIndex == 0);
   lesson['last'] = (lessonIndex == lessons.length - 1);
 
-  res.status(200).json(lesson);
+  setTimeout(() =>  res.status(200).json(lesson), 400);
 
 }
