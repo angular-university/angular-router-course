@@ -14,7 +14,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: ':courseId',
+    path: ':courseUrl',
     component: CourseComponent,
     resolve: {
       course: CourseResolver
@@ -28,7 +28,7 @@ const routes: Routes = [
         }
       },
       {
-        path: "lessons/:lessonUrl",
+        path: "lessons/:lessonSeqNo",
         component: LessonComponent
       }
     ]

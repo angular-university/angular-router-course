@@ -2,7 +2,7 @@
 
 
 import {Request, Response} from 'express';
-import {LESSONS} from "./db-data";
+import {COURSES, LESSONS} from "./db-data";
 import {setTimeout} from "timers";
 
 
@@ -11,16 +11,20 @@ export function searchLessons(req: Request, res: Response) {
 
     const queryParams = req.query;
 
-    const courseId = queryParams.courseId,
+    const courseUrl = queryParams.courseUrl,
           filter = queryParams.filter || '',
           sortOrder = queryParams.sortOrder || 'asc',
           pageNumber = parseInt(queryParams.pageNumber) || 0,
           pageSize = parseInt(queryParams.pageSize) || 3;
 
-    let lessons;
+  const courses:any = Object.values(COURSES);
 
-    if (courseId) {
-     lessons = Object.values(LESSONS).filter(lesson => lesson.courseId == courseId).sort((l1, l2) => l1.id - l2.id);
+  const course = courses.find(course => course.url == courseUrl);
+
+  let lessons;
+
+    if (courseUrl) {
+     lessons = Object.values(LESSONS).filter(lesson => lesson.courseId == course.id).sort((l1, l2) => l1.id - l2.id);
     }
     else {
         lessons = Object.values(LESSONS);

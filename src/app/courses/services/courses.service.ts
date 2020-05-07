@@ -13,18 +13,18 @@ export class CoursesService {
 
     }
 
-    loadCourseById(courseId:number) {
-       return this.http.get<Course>(`/api/courses/${courseId}`)
+    loadCourseByUrl(courseUrl:string) {
+       return this.http.get<Course>(`/api/courses/${courseUrl}`)
             .pipe(
               shareReplay()
             );
     }
 
-    loadAllCourseLessonsSummary(courseId:number): Observable<Lesson[]> {
+    loadAllCourseLessonsSummary(courseUrl:string): Observable<Lesson[]> {
         return this.http.get<Lesson[]>('/api/lessons', {
             params: {
                 pageSize: "10000",
-                courseId: courseId.toString()
+                courseUrl
             }
         })
             .pipe(

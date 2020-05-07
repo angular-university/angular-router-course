@@ -1,6 +1,7 @@
 
 export interface Course {
   id: string;
+  url:string;
   description: string;
   longDescription: string;
   seqNo: number;
