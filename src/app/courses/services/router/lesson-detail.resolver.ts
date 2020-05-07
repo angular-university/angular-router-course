@@ -17,8 +17,6 @@ export class LessonDetailResolver implements Resolve<Lesson>{
     const courseUrl = snapshot.parent.paramMap.get("courseUrl"),
     lessonSeqNo = snapshot.paramMap.get("lessonSeqNo");
 
-    console.log(courseUrl, lessonSeqNo);
-
     return this.courses.loadLessonDetail(courseUrl, lessonSeqNo);
 
   }
