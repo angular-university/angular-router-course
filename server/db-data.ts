@@ -892,7 +892,7 @@ export const LESSONS = {
     id: 90,
     'description': 'What is a Single Page Application?',
     'duration': '04:00',
-    'seqNo': 0,
+    'seqNo': 1,
     courseId: 18,
     videoId: 'VES1eTNxi1s'
   },
@@ -900,7 +900,7 @@ export const LESSONS = {
     id: 91,
     'description': 'Setting Up The Development Environment',
     'duration': '06:05',
-    'seqNo': 1,
+    'seqNo': 2,
     courseId: 18,
     videoId: 'ANfplcxnl78'
   },
@@ -908,7 +908,7 @@ export const LESSONS = {
     id: 92,
     'description': 'Angular Router Setup',
     'duration': '02:36',
-    'seqNo': 2,
+    'seqNo': 3,
     courseId: 18,
     videoId: '9ez72LAd6mM'
   },
@@ -916,7 +916,7 @@ export const LESSONS = {
     id: 93,
     'description': 'Configuring a Home Route and Fallback Route',
     'duration': '02:55',
-    'seqNo': 3,
+    'seqNo': 4,
     courseId: 18,
     videoId: 'Clj-jZpl64w'
   },
@@ -924,7 +924,7 @@ export const LESSONS = {
     id: 94,
     'description': 'Styling Active Routes With The routerLinkActive And routerLinkActiveOptions',
     'duration': '07:50',
-    'seqNo': 4,
+    'seqNo': 5,
     courseId: 18,
     videoId: 'zcgnsmPVc30'
   },
@@ -932,7 +932,7 @@ export const LESSONS = {
     id: 95,
     'description': 'Child Routes - How To Setup a Master Detail Route',
     'duration': '04:10',
-    'seqNo': 5,
+    'seqNo': 6,
     courseId: 18,
     videoId: 'zcgnsmPVc30'
   },
@@ -940,15 +940,15 @@ export const LESSONS = {
     id: 96,
     'description': 'Programmatic Router Navigation via the Router API ',
     'duration': '03:59',
-    'seqNo': 6,
+    'seqNo': 7,
     courseId: 18,
-    videoId: 'eRDuQ4F6Cws'
+    videoId: 'VES1eTNxi1s'
   },
   97: {
     id: 97,
     'description': 'Relative And Absolute Router Navigation',
     'duration': '04:58',
-    'seqNo': 7,
+    'seqNo': 8,
     courseId: 18,
     videoId: 'MQl9Zs3QqGM'
   },
@@ -956,24 +956,24 @@ export const LESSONS = {
     id: 98,
     'description': 'Master Detail Navigation And Route Parameters',
     'duration': '06:03',
-    'seqNo': 8,
+    'seqNo': 9,
     courseId: 18,
-    videoId: ''
+    videoId: 'ANfplcxnl78'
   },
 
   99: {
     id: 99,
     'description': 'The Route Parameters Observable',
     'duration': '06:50',
-    'seqNo': 9,
+    'seqNo': 10,
     courseId: 18,
-    videoId: ''
+    videoId: 'zcgnsmPVc30'
   },
   100: {
     id: 100,
     'description': 'Optional Route Query Parameters',
     'duration': '03:03',
-    'seqNo': 10,
+    'seqNo': 11,
     courseId: 18,
     videoId: '0Qsg8fyKwO4'
   },
@@ -981,7 +981,7 @@ export const LESSONS = {
     id: 101,
     'description': 'The queryParams Directive and the Query Parameters Observable',
     'duration': '07:50',
-    'seqNo': 11,
+    'seqNo': 12,
     courseId: 18,
     videoId: 'VES1eTNxi1s'
   },
@@ -989,7 +989,7 @@ export const LESSONS = {
     id: 102,
     'description': 'Exiting an Angular Route - How To Prevent Memory Leaks',
     'duration': '07:50',
-    'seqNo': 12,
+    'seqNo': 13,
     courseId: 18,
     videoId: 'ANfplcxnl78'
   },
@@ -997,7 +997,7 @@ export const LESSONS = {
     id: 103,
     'description': 'CanDeactivate Route Guard',
     'duration': '04:50',
-    'seqNo': 13,
+    'seqNo': 14,
     courseId: 18,
     videoId: '9ez72LAd6mM'
   },
@@ -1005,7 +1005,7 @@ export const LESSONS = {
     id: 104,
     'description': 'CanActivate Route Guard - An Example of An Asynchronous Route Guard',
     'duration': '03:32',
-    'seqNo': 14,
+    'seqNo': 15,
     courseId: 18,
     videoId: 'Clj-jZpl64w'
   },
@@ -1015,7 +1015,7 @@ export const LESSONS = {
     id: 105,
     'description': 'Configure Auxiliary Routes in the Angular Router',
     'duration': '05:16',
-    'seqNo': 15,
+    'seqNo': 16,
     courseId: 18,
     videoId: 'zcgnsmPVc30'
   },
@@ -1024,7 +1024,7 @@ export const LESSONS = {
     id: 106,
     'description': 'Angular Auxiliary Routes - How To Pass Router Parameters',
     'duration': '07:50',
-    'seqNo': 16,
+    'seqNo': 17,
     courseId: 18,
     videoId: 'yjQUkNHb1Is'
   },
@@ -1032,15 +1032,15 @@ export const LESSONS = {
     id: 107,
     'description': 'Angular Router Redirects and Path Matching',
     'duration': '02:59',
-    'seqNo': 17,
+    'seqNo': 18,
     courseId: 18,
-    videoId: 'eRDuQ4F6Cws'
+    videoId: 'VES1eTNxi1s'
   },
   108: {
     id: 108,
-    'description': 'Angular Router Hash Location Strategy ',
+    'description': 'Angular Router Hash Location Strategy',
     'duration': '07:50',
-    'seqNo': 18,
+    'seqNo': 19,
     courseId: 18,
     videoId: 'MQl9Zs3QqGM'
   },
@@ -1048,15 +1048,15 @@ export const LESSONS = {
     id: 109,
     'description': 'Angular Router Lazy Loading and Shared Modules',
     'duration': '08:45',
-    'seqNo': 19,
+    'seqNo': 20,
     courseId: 18,
-    videoId: ''
+    videoId: '0Qsg8fyKwO4'
   },
   110: {
     id: 110,
     'description': 'Exercise - Implement a Widget Dashboard',
     'duration': '07:50',
-    'seqNo': 20,
+    'seqNo': 21,
     courseId: 18,
     videoId: 'VES1eTNxi1s'
   },
@@ -1064,7 +1064,7 @@ export const LESSONS = {
     id: 111,
     'description': 'Exercise Solution ',
     'duration': '07:50',
-    'seqNo': 21,
+    'seqNo': 22,
     courseId: 18,
     videoId: '0Qsg8fyKwO4'
   }

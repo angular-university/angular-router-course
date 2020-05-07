@@ -1,5 +1,5 @@
 
-<div class="lesson-detail">
+<div class="lesson-detail" *ngIf="(lesson$ | async) as lesson">
 
     <h3>{{lesson.description}}</h3>
 
@@ -7,7 +7,7 @@
 
   <div class="video-container">
 
-    <mat-icon class="nav-button" (click)="previous()" *ngIf="!lesson.first">
+    <mat-icon class="nav-button" (click)="previous(lesson)" *ngIf="!lesson.first">
       navigate_before
     </mat-icon>
 
@@ -16,7 +16,7 @@
 
     </iframe>
 
-    <mat-icon class="nav-button" (click)="next()" *ngIf="!lesson.last">
+    <mat-icon class="nav-button" (click)="next(lesson)" *ngIf="!lesson.last">
       navigate_next
     </mat-icon>
 

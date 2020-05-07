@@ -4,6 +4,9 @@
   align-items: center;
 }
 
+h3, h2, h5 {
+  font-family: 'Roboto';
+}
 
 .nav-button {
   font-size: 50px;
