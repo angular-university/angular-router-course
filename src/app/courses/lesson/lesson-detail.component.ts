@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {LessonSummary} from "../model/lesson-summary";
 import {LessonDetail} from "../model/lesson-detail";
 
 @Component({
@@ -21,6 +20,14 @@ export class LessonDetailComponent implements OnInit {
   ngOnInit() {
 
     this.lesson = this.route.snapshot.data["lesson"];
+
+  }
+
+  previous() {
+
+  }
+
+  next() {
 
   }
 
