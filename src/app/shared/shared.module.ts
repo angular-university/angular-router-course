@@ -5,13 +5,15 @@ import {LoadingService} from "./loading/loading.service";
 import {LoadingComponent} from "./loading/loading.component";
 import {MessagesComponent} from "./messages/messages.component";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {SafeUrlPipe} from "./pipes/safe-url.pipe";
 
 
 
 @NgModule({
   declarations: [
     MessagesComponent,
-    LoadingComponent
+    LoadingComponent,
+    SafeUrlPipe
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
   ],
   exports: [
     MessagesComponent,
-    LoadingComponent
+    LoadingComponent,
+    SafeUrlPipe
   ]
 })
 export class SharedModule {

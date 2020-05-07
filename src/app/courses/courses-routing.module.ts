@@ -5,6 +5,7 @@ import {LessonsListComponent} from "./lessons-list/lessons-list.component";
 import {HomeComponent} from "./home/home.component";
 import {CourseResolver} from "./services/router/course.resolver";
 import {LessonsResolver} from "./services/router/lessons.resolver";
+import {LessonComponent} from "./lesson/lesson.component";
 
 
 const routes: Routes = [
@@ -25,6 +26,10 @@ const routes: Routes = [
         resolve: {
           lessons: LessonsResolver
         }
+      },
+      {
+        path: "lessons/:lessonUrl",
+        component: LessonComponent
       }
     ]
   },

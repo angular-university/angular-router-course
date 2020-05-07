@@ -24,7 +24,6 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {LoginComponent} from './login/login.component';
-import {SafeUrlPipe} from './common/safe-url.pipe';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {SharedModule} from "./shared/shared.module";
 import {AboutComponent} from "./about/about.component";
@@ -34,8 +33,7 @@ import {AboutComponent} from "./about/about.component";
     AppComponent,
     AboutComponent,
     PageNotFoundComponent,
-    LoginComponent,
-    SafeUrlPipe,
+    LoginComponent
 
   ],
   imports: [
