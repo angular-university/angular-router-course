@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
+import {Routes, RouterModule, PreloadAllModules, UrlSerializer} from '@angular/router';
 
 import {LoginComponent} from './login/login.component';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
@@ -38,7 +38,11 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes,
     {
       scrollPositionRestoration:"top",
-      preloadingStrategy: CustomPreLoadingStrategy
+      preloadingStrategy: CustomPreLoadingStrategy,
+      paramsInheritanceStrategy: "always",
+      relativeLinkResolution: "corrected",
+      // try adding %E0%A4%A to the end of an url with hash true
+      malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer, url: string) => urlSerializer.parse('/page-not-found')
 
     })],
   exports: [RouterModule],

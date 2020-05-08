@@ -54,8 +54,7 @@ import {HashLocationStrategy, LocationStrategy} from "@angular/common";
     SharedModule
   ],
   providers: [
-    CanLoadCoursesModuleGuard,
-    //{provide: LocationStrategy, useClass: HashLocationStrategy},
+    CanLoadCoursesModuleGuard
   ],
   bootstrap: [AppComponent]
 })
