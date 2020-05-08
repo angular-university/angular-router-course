@@ -28,6 +28,7 @@ import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {SharedModule} from "./shared/shared.module";
 import {AboutComponent} from "./about/about.component";
 import {CanLoadCoursesModuleGuard} from "./services/can-load-courses-module.guard";
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import {CanLoadCoursesModuleGuard} from "./services/can-load-courses-module.guar
     SharedModule
   ],
   providers: [
-    CanLoadCoursesModuleGuard
+    CanLoadCoursesModuleGuard,
+    //{provide: LocationStrategy, useClass: HashLocationStrategy},
   ],
   bootstrap: [AppComponent]
 })

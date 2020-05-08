@@ -39,6 +39,7 @@ const routes: Routes = [
     {
       scrollPositionRestoration:"top",
       preloadingStrategy: CustomPreLoadingStrategy
+
     })],
   exports: [RouterModule],
   providers: [
