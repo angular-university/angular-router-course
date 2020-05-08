@@ -1,11 +1,12 @@
 import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
 
 import {LoginComponent} from './login/login.component';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {AboutComponent} from "./about/about.component";
 import {AuthenticationGuard} from "./services/auth.guard";
 import {CanLoadCoursesModuleGuard} from "./services/can-load-courses-module.guard";
+import {CustomPreLoadingStrategy} from "./services/custom-pre-loading.strategy";
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
   {
     path: 'courses',
     loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule),
-    canLoad: [CanLoadCoursesModuleGuard]
+    data: {preload:true}
+    //canLoad: [CanLoadCoursesModuleGuard]
   },
   {
     path: 'login',
@@ -33,7 +35,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration:"top"})],
+  imports: [RouterModule.forRoot(routes,
+    {
+      scrollPositionRestoration:"top",
+      preloadingStrategy: CustomPreLoadingStrategy
+    })],
   exports: [RouterModule],
   providers: [
     AuthenticationGuard
