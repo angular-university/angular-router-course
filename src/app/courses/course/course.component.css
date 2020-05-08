@@ -11,6 +11,11 @@
     display: block;
 }
 
+.discount {
+  font-family: Roboto;
+  color:red;
+}
+
 .description-cell {
     text-align: left;
     margin: 10px auto;
