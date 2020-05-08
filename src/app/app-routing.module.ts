@@ -42,7 +42,8 @@ const routes: Routes = [
       paramsInheritanceStrategy: "always",
       relativeLinkResolution: "corrected",
       // try adding %E0%A4%A to the end of an url with hash true
-      malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer, url: string) => urlSerializer.parse('/page-not-found')
+      malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer, url: string) => urlSerializer.parse('/page-not-found'),
+      errorHandler: (error: any) => console.log("Router error ocurred", error)
 
     })],
   exports: [RouterModule],
