@@ -5,13 +5,17 @@ import {Observable} from "rxjs";
 import {filter} from "rxjs/operators";
 
 @Injectable()
-export class AuthenticationGuard implements CanActivate {
+export class AuthenticationGuard implements CanActivate, CanActivateChild {
 
   constructor(private auth: AuthStore) {
 
   }
 
   canActivate(snapshot: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
+    return this.auth.isLoggedIn$;
+  }
+
+  canActivateChild(childRoute: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
     return this.auth.isLoggedIn$;
   }
 

@@ -20,6 +20,7 @@ const routes: Routes = [
     path: ':courseUrl',
     component: CourseComponent,
     canActivate: [AuthenticationGuard],
+    canActivateChild: [AuthenticationGuard],
     resolve: {
       course: CourseResolver
     },
