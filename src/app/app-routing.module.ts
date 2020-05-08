@@ -7,6 +7,7 @@ import {AboutComponent} from "./about/about.component";
 import {AuthenticationGuard} from "./services/auth.guard";
 import {CanLoadCoursesModuleGuard} from "./services/can-load-courses-module.guard";
 import {CustomPreLoadingStrategy} from "./services/custom-pre-loading.strategy";
+import {ChatComponent} from "./chat/chat.component";
 
 const routes: Routes = [
   {
@@ -27,6 +28,11 @@ const routes: Routes = [
   {
     path:'about',
     component: AboutComponent
+  },
+  {
+    path: "helpdesk-chat",
+    component: ChatComponent,
+    outlet: 'chat'
   },
   {
     path: '**',

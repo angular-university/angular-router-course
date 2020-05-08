@@ -29,13 +29,15 @@ import {SharedModule} from "./shared/shared.module";
 import {AboutComponent} from "./about/about.component";
 import {CanLoadCoursesModuleGuard} from "./services/can-load-courses-module.guard";
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     PageNotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    ChatComponent
 
   ],
   imports: [
