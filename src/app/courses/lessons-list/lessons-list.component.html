@@ -11,7 +11,7 @@
 
   </thead>
 
-  <tr class="lesson-row" *ngFor="let lesson of lessons" [routerLink]="['lessons', lesson.seqNo]">
+  <tr class="lesson-row" *ngFor="let lesson of lessons">
     <td class="seqno-cell">{{lesson.seqNo + 1}}</td>
     <td class="description-cell">{{lesson.description}}</td>
     <td class="duration-cell">{{lesson.duration}}</td>

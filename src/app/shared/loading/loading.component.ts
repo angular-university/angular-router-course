@@ -13,23 +13,11 @@ export class LoadingComponent implements OnInit {
   @Input()
   routing: boolean = false;
 
-  constructor(public loadingService: LoadingService, private router: Router) {
+  constructor(public loadingService: LoadingService) {
 
   }
 
   ngOnInit() {
-
-    this.router.events
-      .subscribe(event => {
-        if (this.routing) {
-          if (event instanceof NavigationStart) {
-            this.loadingService.loadingOn();
-          } else if (event instanceof NavigationEnd || event instanceof NavigationError
-            || event instanceof NavigationCancel) {
-            this.loadingService.loadingOff()
-          }
-        }
-      });
 
   }
 

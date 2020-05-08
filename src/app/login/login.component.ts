@@ -36,9 +36,7 @@ export class LoginComponent implements OnInit {
 
     this.auth.login(val.email, val.password)
         .subscribe(
-            () => {
-                this.router.navigateByUrl("/courses")
-            },
+            () => {},
             err => {
                 alert("Login failed!");
             }
