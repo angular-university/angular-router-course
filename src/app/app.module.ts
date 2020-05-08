@@ -27,6 +27,7 @@ import {LoginComponent} from './login/login.component';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {SharedModule} from "./shared/shared.module";
 import {AboutComponent} from "./about/about.component";
+import {CanLoadCoursesModuleGuard} from "./services/can-load-courses-module.guard";
 
 @NgModule({
   declarations: [
@@ -51,7 +52,9 @@ import {AboutComponent} from "./about/about.component";
     ReactiveFormsModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+    CanLoadCoursesModuleGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

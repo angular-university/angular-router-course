@@ -5,6 +5,7 @@ import {LoginComponent} from './login/login.component';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {AboutComponent} from "./about/about.component";
 import {AuthenticationGuard} from "./services/auth.guard";
+import {CanLoadCoursesModuleGuard} from "./services/can-load-courses-module.guard";
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
   {
     path: 'courses',
     loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule),
+    canLoad: [CanLoadCoursesModuleGuard]
   },
   {
     path: 'login',
