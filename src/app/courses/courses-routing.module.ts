@@ -8,6 +8,7 @@ import {LessonsResolver} from "./services/router/lessons.resolver";
 import {LessonDetailComponent} from "./lesson/lesson-detail.component";
 import {LessonDetailResolver} from "./services/router/lesson-detail.resolver";
 import {AuthenticationGuard} from "../services/auth.guard";
+import {ConfirmExitGuard} from "./services/router/confirm-exit.guard";
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
     component: CourseComponent,
     canActivate: [AuthenticationGuard],
     canActivateChild: [AuthenticationGuard],
+    canDeactivate: [ConfirmExitGuard],
     resolve: {
       course: CourseResolver
     },
@@ -49,7 +51,8 @@ const routes: Routes = [
   providers: [
     CourseResolver,
     LessonsResolver,
-    LessonDetailResolver
+    LessonDetailResolver,
+    ConfirmExitGuard
   ]
 })
 export class CoursesRoutingModule {
