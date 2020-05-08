@@ -31,3 +31,8 @@ main {
 .menu-item.menu-item-active {
   text-decoration: underline;
 }
+
+
+.profile-picture {
+  max-height: 40px;
+}

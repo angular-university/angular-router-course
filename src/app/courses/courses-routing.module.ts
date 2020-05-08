@@ -7,16 +7,19 @@ import {CourseResolver} from "./services/router/course.resolver";
 import {LessonsResolver} from "./services/router/lessons.resolver";
 import {LessonDetailComponent} from "./lesson/lesson-detail.component";
 import {LessonDetailResolver} from "./services/router/lesson-detail.resolver";
+import {AuthenticationGuard} from "../services/auth.guard";
 
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component: HomeComponent,
+    canActivate: [AuthenticationGuard]
   },
   {
     path: ':courseUrl',
     component: CourseComponent,
+    canActivate: [AuthenticationGuard],
     resolve: {
       course: CourseResolver
     },

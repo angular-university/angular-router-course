@@ -4,6 +4,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {AboutComponent} from "./about/about.component";
+import {AuthenticationGuard} from "./services/auth.guard";
 
 const routes: Routes = [
   {
@@ -31,7 +32,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {scrollPositionRestoration:"top"})],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    AuthenticationGuard
+  ]
 })
 export class AppRoutingModule {
 

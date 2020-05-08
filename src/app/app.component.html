@@ -27,6 +27,14 @@
 
     <div class="filler"></div>
 
+    <ng-container *ngIf="(auth.user$ | async) as user">
+
+      <img class="profile-picture" [src]="user.pictureUrl">
+
+    </ng-container>
+
+
+
   </mat-toolbar>
 
   <messages></messages>

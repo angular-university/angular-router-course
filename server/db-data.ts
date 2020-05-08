@@ -1079,7 +1079,7 @@ export const USERS = {
     id: 1,
     email: 'test@angular-university.io',
     password: 'test',
-    pictureUrl: 'https://lh3.googleusercontent.com/-1pUNnTB3vaA/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdn4uEc0ti8YE4Uuw6_Kz04tVe2Mg.CMID/s32-c/photo.jpg'
+    pictureUrl: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png'
   }
 
 };
