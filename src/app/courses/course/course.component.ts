@@ -1,20 +1,5 @@
-import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import { Component, OnInit} from '@angular/core';
 import {Course} from '../model/course';
-import {
-  debounceTime,
-  distinctUntilChanged,
-  startWith,
-  tap,
-  delay,
-  map,
-  concatMap,
-  switchMap,
-  withLatestFrom,
-  concatAll, shareReplay, catchError
-} from 'rxjs/operators';
-import {merge, fromEvent, Observable, concat, throwError, combineLatest} from 'rxjs';
-import {CoursesService} from '../services/courses.service';
 
 
 @Component({
@@ -26,24 +11,15 @@ export class CourseComponent implements OnInit {
 
   course: Course;
 
-  couponCode:string;
 
-
-  constructor(private route: ActivatedRoute) {
+  constructor() {
 
 
   }
 
   ngOnInit() {
 
-      this.course = this.route.snapshot.data["course"];
 
-      this.couponCode = this.route.snapshot.queryParamMap.get("couponCode");
-
-  }
-
-  confirmExit() {
-    return confirm(`Are you sure you want to exit ${this.course.description}?`);
   }
 
 
