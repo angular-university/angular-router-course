@@ -10,6 +10,10 @@ import {Course} from '../model/course';
 })
 export class CourseComponent implements OnInit {
 
+  course:Course;
+
+  couponCode:string;
+
   constructor() {
 
 
