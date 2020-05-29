@@ -14,12 +14,14 @@ export class CourseComponent implements OnInit {
 
   couponCode:string;
 
-  constructor() {
+  constructor(private route:ActivatedRoute) {
 
 
   }
 
   ngOnInit() {
+
+      this.course = this.route.snapshot.data["course"];
 
 
   }
