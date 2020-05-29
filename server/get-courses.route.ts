@@ -33,5 +33,11 @@ export function getCourseByUrl(req: Request, res: Response) {
 
     const course = courses.find(course => course.url == courseUrl);
 
-    res.status(200).json(course);
+    setTimeout(() => {
+
+        res.status(200).json(course);
+
+    }, 1000);
+
+
 }
