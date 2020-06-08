@@ -11,7 +11,7 @@ import {map} from "rxjs/operators";
 })
 export class LessonDetailComponent implements OnInit {
 
-  lesson: LessonDetail;
+  lesson$: Observable<LessonDetail>;
 
   constructor(private route: ActivatedRoute, private router: Router) {
 
@@ -21,7 +21,7 @@ export class LessonDetailComponent implements OnInit {
 
   ngOnInit() {
 
-      this.lesson =  this.route.snapshot.data["lesson"];
+      this.lesson$ = this.route.data.pipe(map(data => data["lesson"]));
 
   }
 
