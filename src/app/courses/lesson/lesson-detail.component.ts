@@ -23,6 +23,4 @@ export class LessonDetailComponent implements OnInit {
 
   }
 
-
-
 }
