@@ -11,7 +11,7 @@ import {map} from "rxjs/operators";
 })
 export class LessonDetailComponent implements OnInit {
 
-  lesson$: Observable<LessonDetail>;
+  lesson: LessonDetail;
 
   constructor() {
 
