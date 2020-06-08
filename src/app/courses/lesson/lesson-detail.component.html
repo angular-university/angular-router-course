@@ -11,7 +11,7 @@
 
   <div class="video-container">
 
-    <mat-icon class="nav-button" *ngIf="!lesson.first">
+    <mat-icon class="nav-button" *ngIf="!lesson.first" (click)="previous(lesson)">
       navigate_before
     </mat-icon>
 
@@ -20,7 +20,7 @@
 
     </iframe>
 
-    <mat-icon class="nav-button" *ngIf="!lesson.last">
+    <mat-icon class="nav-button" *ngIf="!lesson.last" (click)="next(lesson)">
       navigate_next
     </mat-icon>
 
