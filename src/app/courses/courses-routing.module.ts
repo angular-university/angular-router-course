@@ -19,6 +19,7 @@ const routes: Routes = [
         path:":courseUrl",
         component: CourseComponent,
         canActivate: [AuthGuard],
+        canActivateChild: [AuthGuard],
         children: [
             {
               path: "",
