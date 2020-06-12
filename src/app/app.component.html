@@ -14,7 +14,8 @@
         <span>About</span>
       </a>
 
-      <a mat-button class="menu-item" routerLink="/login"
+      <a mat-button class="menu-item" *ngIf="auth.isLoggedOut$ | async"
+         routerLink="/login"
          routerLinkActive="menu-item-active">
         <mat-icon>account_circle</mat-icon>
         <span>Login</span>
