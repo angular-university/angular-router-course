@@ -1,0 +1,22 @@
+
+.video-container {
+  display: flex;
+  align-items: center;
+}
+
+h3, h2, h5, .back {
+  font-family: 'Roboto';
+}
+
+.back {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.nav-button {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}

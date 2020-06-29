@@ -1,0 +1,31 @@
+
+
+.chat-container {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 20px;
+  font-family: Roboto;
+}
+
+.chat-container textarea {
+  height: 200px;
+}
+
+.chat-container .buttons-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.chat-container .buttons-container button {
+  margin-left: 10px;
+}

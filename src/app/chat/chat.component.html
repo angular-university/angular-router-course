@@ -1,0 +1,18 @@
+<div class="chat-container mat-elevation-z7">
+
+  <h2>How can we help you?</h2>
+
+  <textarea placeholder="Type Your Message Here"></textarea>
+
+  <div class="buttons-container">
+
+    <button mat-raised-button color="primary">Send Message</button>
+
+    <button mat-raised-button
+        [routerLink]="[ '../', {outlets: {chat: null}}]">
+        Close Chat
+    </button>
+
+  </div>
+
+</div>

@@ -1,0 +1,47 @@
+
+.course {
+    text-align: center;
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.course-thumbnail {
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+.discount {
+  font-family: Roboto;
+  color:red;
+}
+
+.description-cell {
+    text-align: left;
+    margin: 10px auto;
+}
+
+.duration-cell {
+    text-align: center;
+}
+
+.duration-cell mat-icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+
+
+
+.search-bar {
+    margin-top: 20px;
+}
+.search {
+  margin-left: 10px;
+}
+
+
+.lesson-detail {
+  margin-top: 40px;
+}

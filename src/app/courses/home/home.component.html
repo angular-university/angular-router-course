@@ -1,0 +1,30 @@
+
+<div class="courses-panel">
+
+        <h3 class="page-title">All Courses</h3>
+
+        <mat-tab-group>
+
+            <mat-tab label="Beginners">
+
+                <courses-card-list [courses]="beginnerCourses$ | async" (coursesChanged)="reloadCourses()">
+
+                </courses-card-list>
+
+            </mat-tab>
+
+        <mat-tab label="Advanced">
+
+            <courses-card-list [courses]="advancedCourses$ | async" (coursesChanged)="reloadCourses()">
+
+            </courses-card-list>
+
+
+        </mat-tab>
+
+    </mat-tab-group>
+
+
+
+</div>
+

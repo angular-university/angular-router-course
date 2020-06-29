@@ -1,0 +1,66 @@
+<mat-sidenav-container fullscreen>
+
+  <mat-toolbar color="primary">
+
+    <div class="toolbar-tools">
+
+      <a class="menu-item" mat-button routerLink="/courses"
+         routerLinkActive="menu-item-active"
+         [routerLinkActiveOptions]="{exact:true}">
+        <span>Courses</span>
+      </a>
+
+      <a class="menu-item" mat-button routerLink="/about"
+         routerLinkActive="menu-item-active">
+        <span>About</span>
+      </a>
+
+      <a mat-button class="menu-item" *ngIf="auth.isLoggedOut$ | async"
+         routerLink="/login"
+         routerLinkActive="menu-item-active">
+        <mat-icon>account_circle</mat-icon>
+        <span>Login</span>
+      </a>
+
+    </div>
+
+    <a mat-button class="menu-item" *ngIf="auth.isLoggedIn$ | async"
+        [routerLink]="[{outlets: {chat: ['helpdesk-chat']}}]">
+      <mat-icon>help</mat-icon>
+    </a>
+
+    <a mat-button class="menu-item" (click)="logout()" *ngIf="auth.isLoggedIn$ | async">
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Logout</span>
+    </a>
+
+
+    <div class="filler"></div>
+
+    <ng-container *ngIf="(auth.user$ | async) as user">
+
+      <img class="profile-picture" [src]="user.pictureUrl">
+
+    </ng-container>
+
+
+
+  </mat-toolbar>
+
+  <messages></messages>
+
+  <loading [detectRoutingOngoing]="true"></loading>
+
+   <router-outlet></router-outlet>
+
+</mat-sidenav-container>
+
+<router-outlet name="chat"></router-outlet>
+
+
+
+
+
+
+
+

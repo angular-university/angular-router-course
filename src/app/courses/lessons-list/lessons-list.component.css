@@ -1,0 +1,28 @@
+
+
+.lessons-table {
+  min-height: 360px;
+  margin-top: 10px;
+}
+
+
+.lessons-table tr {
+  height: 60px;
+}
+
+.lessons-table tr:hover {
+  cursor: pointer;
+}
+
+.lessons-table td {
+  border-top: 1px solid  rgba(0,0,0,.12);
+}
+
+.lessons-table th {
+  padding: 20px;
+  color: rgba(0,0,0,.54);
+}
+
+.lessons-table td {
+  padding: 10px;
+}
