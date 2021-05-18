@@ -3,7 +3,7 @@
 
 This repository contains the code of the course [Angular Router In Depth](https://angular-university.io/course/angular-router-course).
 
-This course repository is updated to Angular v11.
+This course repository is updated to Angular v12.
 
 ![Angular Router In Depth](https://angular-university.s3-us-west-1.amazonaws.com/course-images/angular-router-course.jpg)
 
