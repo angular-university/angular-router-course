@@ -1,7 +1,7 @@
 import { Component, Inject} from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
 import {Course} from "../model/course";
-import {UntypedFormBuilder, Validators, UntypedFormGroup} from "@angular/forms";
+import {FormBuilder, Validators, FormGroup} from "@angular/forms";
 import * as moment from 'moment';
 import {CoursesService} from "../services/courses.service";
 import {LoadingService} from "../../shared/loading/loading.service";
@@ -19,12 +19,12 @@ import {MessagesService} from "../../shared/messages/messages.service";
 })
 export class CourseDialogComponent {
 
-    form: UntypedFormGroup;
+    form: FormGroup;
 
     course:Course;
 
     constructor(
-        private fb: UntypedFormBuilder,
+        private fb: FormBuilder,
         private dialogRef: MatDialogRef<CourseDialogComponent>,
         @Inject(MAT_DIALOG_DATA) course:Course,
         private courses: CoursesService) {
