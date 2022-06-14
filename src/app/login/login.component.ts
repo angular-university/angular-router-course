@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 
 
 import {Router} from '@angular/router';
@@ -12,10 +12,10 @@ import {AuthStore} from '../services/auth.store';
 })
 export class LoginComponent implements OnInit {
 
-  form: FormGroup;
+  form: UntypedFormGroup;
 
   constructor(
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private router: Router,
     private auth: AuthStore) {
 
