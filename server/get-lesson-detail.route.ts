@@ -6,7 +6,7 @@ import {COURSES, LESSONS} from "./db-data";
 export function findLessonDetail(req: Request, res: Response) {
 
   const courseUrl = req.query["courseUrl"],
-        lessonSeqNo = parseInt(req.query['lessonSeqNo']);
+        lessonSeqNo = parseInt(req.query['lessonSeqNo'] as string);
 
   const courses:any = Object.values(COURSES);
 
