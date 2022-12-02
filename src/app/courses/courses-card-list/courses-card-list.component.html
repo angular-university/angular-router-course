@@ -15,12 +15,12 @@
 
     <mat-card-actions class="course-actions">
 
-        <button mat-button class="mat-raised-button mat-primary"
+        <button  mat-raised-button color="primary"
             [routerLink]="[course.url]" [queryParams]="{couponCode: 'NEW_YEAR'}">
             VIEW COURSE
         </button>
 
-        <button mat-button class="mat-raised-button mat-accent"
+        <button mat-button mat-raised-button color="accent"
                 (click)="editCourse(course)">
             EDIT
         </button>
