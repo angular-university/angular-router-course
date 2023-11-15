@@ -49,8 +49,7 @@ const routes: Routes = [
           routes, {
     preloadingStrategy: CustomPreloadingStrategy,
     scrollPositionRestoration: 'enabled',
-    paramsInheritanceStrategy: 'always',
-    malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer, url: string) => urlSerializer.parse("/page-not-found")
+    paramsInheritanceStrategy: 'always'
 })
   ],
   exports: [RouterModule],
