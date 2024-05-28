@@ -20,7 +20,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {HttpClientModule} from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {LoginComponent} from './login/login.component';
@@ -30,33 +30,26 @@ import {AboutComponent} from "./about/about.component";
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 import { ChatComponent } from './chat/chat.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    PageNotFoundComponent,
-    LoginComponent,
-    ChatComponent
-
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatInputModule,
-    MatCardModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    SharedModule
-  ],
-  providers: [
-  ],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        AboutComponent,
+        PageNotFoundComponent,
+        LoginComponent,
+        ChatComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        BrowserAnimationsModule,
+        MatMenuModule,
+        MatButtonModule,
+        MatIconModule,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatInputModule,
+        MatCardModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        SharedModule], providers: [
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class AppModule {
 }
