@@ -15,7 +15,8 @@ import {MessagesService} from "../../shared/messages/messages.service";
     providers: [
         LoadingService,
         MessagesService
-    ]
+    ],
+    standalone: false
 })
 export class CourseDialogComponent {
 

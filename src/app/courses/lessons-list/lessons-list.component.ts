@@ -3,9 +3,10 @@ import {ActivatedRoute} from "@angular/router";
 import {LessonSummary} from "../model/lesson-summary";
 
 @Component({
-  selector: 'lessons-list',
-  templateUrl: './lessons-list.component.html',
-  styleUrls: ['./lessons-list.component.css']
+    selector: 'lessons-list',
+    templateUrl: './lessons-list.component.html',
+    styleUrls: ['./lessons-list.component.css'],
+    standalone: false
 })
 export class LessonsListComponent implements OnInit {
 

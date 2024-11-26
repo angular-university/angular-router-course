@@ -5,9 +5,10 @@ import {Observable} from "rxjs";
 import {map} from "rxjs/operators";
 
 @Component({
-  selector: 'lesson',
-  templateUrl: './lesson-detail.component.html',
-  styleUrls: ['./lesson-detail.component.css']
+    selector: 'lesson',
+    templateUrl: './lesson-detail.component.html',
+    styleUrls: ['./lesson-detail.component.css'],
+    standalone: false
 })
 export class LessonDetailComponent implements OnInit {
 
