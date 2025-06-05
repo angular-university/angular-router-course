@@ -1,5 +1,5 @@
 
->>> body {
+body {
     margin: 0;
 }
 
@@ -26,6 +26,9 @@ main {
 .menu-item {
   text-transform: uppercase;
   cursor:pointer;
+}
+.menu-item.mdc-button {
+  min-width: max-content;
 }
 
 .menu-item.menu-item-active {
