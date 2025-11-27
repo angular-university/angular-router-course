@@ -19,23 +19,25 @@
 
     </div>
 
-    <a mat-button class="menu-item" *ngIf="auth.isLoggedIn$ | async">
-      <mat-icon>help</mat-icon>
-    </a>
+    @if (auth.isLoggedIn$ | async) {
+      <a mat-button class="menu-item">
+        <mat-icon>help</mat-icon>
+      </a>
+    }
 
-    <a mat-button class="menu-item" (click)="logout()" *ngIf="auth.isLoggedIn$ | async">
-      <mat-icon>exit_to_app</mat-icon>
-      <span>Logout</span>
-    </a>
+    @if (auth.isLoggedIn$ | async) {
+      <a mat-button class="menu-item" (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </a>
+    }
 
 
     <div class="filler"></div>
 
-    <ng-container *ngIf="(auth.user$ | async) as user">
-
+    @if ((auth.user$ | async); as user) {
       <img class="profile-picture" [src]="user.pictureUrl">
-
-    </ng-container>
+    }
 
 
 
