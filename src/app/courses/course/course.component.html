@@ -1,18 +1,22 @@
 <ng-container>
 
-    <div class="course">
+  <div class="course">
 
-        <h2>{{course.description}}</h2>
+    <h2>{{course.description}}</h2>
 
-        <h3 class="discount" *ngIf="couponCode">
-            Use {{couponCode}} for a huge discount!
-        </h3>
+    @if (couponCode) {
+      <h3 class="discount">
+        Use {{couponCode}} for a huge discount!
+      </h3>
+    }
 
-        <img class="course-thumbnail" [src]="course.iconUrl" *ngIf="course">
+    @if (course) {
+      <img class="course-thumbnail" [src]="course.iconUrl">
+    }
 
-        <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 
-    </div>
+  </div>
 
 </ng-container>
 
