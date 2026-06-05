@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {Observable} from 'rxjs';
 import {LoadingService} from './loading.service';
 import {NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router} from "@angular/router";
@@ -7,6 +7,7 @@ import {NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Route
     selector: 'loading',
     templateUrl: './loading.component.html',
     styleUrls: ['./loading.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class LoadingComponent implements OnInit {

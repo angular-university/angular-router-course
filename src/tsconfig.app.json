@@ -8,5 +8,8 @@
   "files": [
     "main.ts",
     "polyfills.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "strictTemplates": false
+  }
 }
