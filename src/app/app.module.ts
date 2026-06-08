@@ -20,7 +20,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { provideHttpClient, withInterceptorsFromDi, withXhr } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {LoginComponent} from './login/login.component';
@@ -49,7 +49,7 @@ import { ChatComponent } from './chat/chat.component';
         AppRoutingModule,
         ReactiveFormsModule,
         SharedModule], providers: [
-        provideHttpClient(withXhr(), withInterceptorsFromDi())
+        provideHttpClient(withInterceptorsFromDi())
     ] })
 export class AppModule {
 }
